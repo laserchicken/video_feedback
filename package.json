@@ -1,0 +1,21 @@
+{
+  "name": "video_feedback",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html",
+    "lint": "eslint \"src/**/*.js\""
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.27.0",
+    "parcel": "^2.0.0-beta.3.1",
+    "simple-git-hooks": "^2.4.1"
+  }
+}

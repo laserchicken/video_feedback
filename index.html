@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Video Feedback</title>
+    <link rel="stylesheet" href="src/css/main.css"/>
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="controls">
+	<div class="keyboardInfo">
+	  <span>Use keyboard for camera</span>
+	  <span class="noWrap">
+	    <span>direction:</span>
+	    <button id="up">w</button>
+	    <button id="left">a</button>
+	    <button id="down">s</button>
+	    <button id="right">d</button>
+	  </span>
+	  <span class="noWrap">
+	    <span>rotation:</span>
+	    <button id="rotateClockwise">[</button>
+	    <button id="rotateCounterClockwise">]</button>
+	  </span>
+	  <span class="noWrap">
+	    <span>and zoom:</span>
+	    <button id="zoomIn">+</button>
+	    <button id="zoomOut">-</button>
+	  </span>
+	</div>
+	<div>
+	  <div>
+	    <div class="slider">
+	      <label for="opacity">Opacity</label>
+	      <input name="opacity" id="opacity" type="range" min="0" max="100" value="100" />
+	    </div>
+	    <div class="slider">
+	      <label for="saturation">Saturation</label>
+	      <input name="saturation" id="saturation" min="0" max="200" type="range" />
+	    </div>
+	    <div class="slider">
+	      <label for="brightness">Brightness</label>
+	      <input name="brightness" id="brightness" min="0" max="200" type="range" />
+	    </div>
+	    <div class="slider">
+	      <label for="contrast">Contrast</label>
+	      <input name="contrast" id="contrast" min="0" max="200" type="range" />
+	    </div>
+	    <div class="slider">
+	      <label for="grayscale">Grayscale</label>
+	      <input name="grayscale" id="grayscale" type="range" value="0" />
+	    </div>
+	    <div class="slider">
+	      <label for="sepia">Sepia</label>
+	      <input name="sepia" id="sepia" type="range" value="0" />
+	    </div>
+	    <div class="slider">
+	      <label for="inversion">Inversion</label>
+	      <input name="inversion" id="inversion" type="range" value="0" />
+	    </div>
+	  </div>
+	</div>
+      </div>
+      <canvas style="display: none" width="800" height="800"></canvas>
+      <video  width="800" height="800" id="video" playsinline controls autoplay muted ></video>
+    </div>
+
+    <script src="src/js/main.js"></script>
+
+  </body>
+</html>
